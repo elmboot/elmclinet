@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Index from "../views/Index.vue";
+import Login from "../views/Login.vue";
 import BusinessList from "../views/BusinessList.vue";
 // ... ...
 
@@ -13,6 +14,11 @@ const routes = [
     component: Index,
   },
   {
+    path: "/login",
+    name: "Login",
+    component: Login,
+  },
+  {
     path: "/index",
     name: "Index",
     component: Index,
@@ -21,9 +27,6 @@ const routes = [
     path: "/businessList",
     name: "BusinessList",
     component: BusinessList,
-  },
-  {
-    // ... ...
   },
 ];
 

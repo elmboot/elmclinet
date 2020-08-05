@@ -43,8 +43,8 @@ router.beforeEach(function(to, from, next) {
       to.path == "/index" ||
       to.path == "/businessList" ||
       to.path == "/businessInfo" ||
-      to.path == "/login" ||
-      to.path == "/register"
+      to.path == "/register" ||
+      to.path == "/login"
     )
   ) {
     if (user == null) {
